@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from '../assets/react.svg';
 
 function ListGroup() {
     const items = ['New York', 'Paris', 'Tokyo', 'London'];
@@ -10,6 +11,7 @@ function ListGroup() {
 
     return (
         <>
+            <img className="m-3" src={logo} alt="" />
             <h2>Lists of Item </h2>
             {validateMessage()}
             {/* {items.length === 0 ? <p>No item found.</p> : null} */}
